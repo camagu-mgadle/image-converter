@@ -11,21 +11,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>Browser Image Converter</h2>
+    <div>
+      <h2>Browser Image Converter</h2>
 
-    <input type="file" id="upload" accept="image/*" />
+      <input type="file" id="upload" accept="image/*" />
 
-    <select id="format">
-      <option value="image/png">PNG</option>
-      <option value="image/jpeg">JPEG</option>
-      <option value="image/webp">WebP</option>
-    </select>
+      <select id="format">
+        <option value="image/png">PNG</option>
+        <option value="image/jpeg">JPEG</option>
+        <option value="image/webp">WebP</option>
+      </select>
 
-    <button onclick="convertImage()">Convert</button>
+      <button onclick="convertImage()">Convert</button>
 
-    <br /><br />
+      <br /><br />
 
-    <a id="download" style="display: none">Download Converted Image</a>
+      <a id="download" style="display: none">Download Converted Image</a>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
