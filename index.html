@@ -12,21 +12,27 @@
   </head>
   <body>
     <mian>
-      <h2>Browser Image Converter</h2>
+      <h2 id="title">Browser Image Converter</h2>
+      <p class="description">
+        For a fast, private and serverless browser-based imageconverter.
+      </p>
 
-      <input type="file" id="upload" accept="image/*" />
+      <div class="container">
+        <input class="file-btn" type="file" id="upload" accept="image/*" />
+        <div>
+          <select class="select-key" id="format">
+            <option value="image/png">PNG</option>
+            <option value="image/jpeg">JPEG</option>
+            <option value="image/webp">WebP</option>
+          </select>
+        </div>
 
-      <select id="format">
-        <option value="image/png">PNG</option>
-        <option value="image/jpeg">JPEG</option>
-        <option value="image/webp">WebP</option>
-      </select>
+        <button class="file-btn" onclick="convertImage()">Convert</button>
 
-      <button onclick="convertImage()">Convert</button>
+        <br /><br />
 
-      <br /><br />
-
-      <a id="download" style="display: none">Download Converted Image</a>
+        <a id="download">Download Converted Image</a>
+      </div>
     </mian>
     <script src="script.js"></script>
   </body>
