@@ -28,7 +28,8 @@ a {
   display: none;
 }
 
-.container button {
+.container,
+button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -58,7 +59,7 @@ a {
     transform 0.2s ease;
 }
 .select-key {
-  width: 70%;
+  min-width: 70%;
   cursor: pointer;
   color: var(--white);
   background-color: var(--light-purple);
